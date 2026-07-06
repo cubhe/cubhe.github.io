@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renzhi He</title>
+  <meta name="description" content="Renzhi He — Ph.D. candidate in Biomedical Engineering at UC Davis, working on multi-scale computational imaging and physics-informed neural networks.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fonts: Josefin Slab (titles), Unna (serif italic body accents), Cardo (paragraph serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;0,600;0,700;1,400&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.png" alt="logo" class="brand-logo">
+        <span class="brand-name">Renzhi He</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#beyond">Beyond the Lab</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <span id="top"></span>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="about">
+    <div class="about-photo">
+      <img src="images/burney-falls.png" alt="Burney Falls">
+      <span class="photo-caption">burney falls</span>
+    </div>
+    <div class="about-text">
+      <h1 class="title-serif">About Me</h1>
+      <p>I am a Ph.D. candidate in Biomedical Engineering at UC Davis, specializing in multi-scale computational imaging—from conventional imaging systems to advanced microscopy—powered by physics-informed neural networks.</p>
+      <p>My research bridges optics, AI, and scientific discovery, focusing on how differentiable optical modeling and deep learning can push the physical limits of image acquisition and reconstruction.</p>
+      <p>My long-term vision is to build foundation models for scientific imaging that unify physical modeling and AI across scales, enabling AGI systems and autonomous laboratories to perceive and understand the physical world with unprecedented fidelity.</p>
+    </div>
+  </section>
+
+  <!-- ===================== NEWS ===================== -->
+  <section id="news" class="news">
+    <h2 class="news-title">News</h2>
+    <ul class="news-list">
+      <li>10/2025: Two Oral presentations at Photonics West 2026 (see you in SF)</li>
+      <li>06/2025: One Paper accepted by <a href="https://arxiv.org/abs/2510.16391" target="_blank" rel="noopener">ICCV 2025</a></li>
+      <li>05/2025: One Paper accepted by <a href="https://ieeexplore.ieee.org/document/11023177" target="_blank" rel="noopener">TPAMI</a></li>
+      <li>05/2025: One poster on BMEGG symposium 2025 @UCDavis</li>
+      <li>05/2025: I passed the PhD Qualifying Exam</li>
+      <li>04/2025: Oral presentation at Optica Biophotonics Congress 2025</li>
+      <li>02/2025: Oral presentation at Electronic Imaging 2025</li>
+      <li>01/2025: Oral presentation at Photonics West 2025 (SPIE Travel Award)</li>
+      <li>07/2024: One poster on CVPR workshop 2024</li>
+      <li>05/2024: One poster on BMEGG symposium 2024 @UCDavis</li>
+      <li>05/2024: One poster on neruroengineering @UCDavis</li>
+    </ul>
+  </section>
+
+  <!-- ===================== QUOTE 1 ===================== -->
+  <section class="quote" style="background-image:url('images/ocean.png')">
+    <p>&ldquo;Pain is inevitable, suffering is optional.&rdquo;&nbsp;&nbsp;&nbsp;&ndash; Murakami Haruki</p>
+  </section>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <section id="research" class="research">
+    <h2 class="title-serif center">Research</h2>
+
+    <article class="paper">
+      <div class="paper-img"><img src="images/research-nvp.png" alt="NVP poster"></div>
+      <h3 class="paper-title">Recover Biological Structure from Sparse-View Diffraction Images with Neural Volumetric Prior</h3>
+      <p class="paper-venue">International Conference on Computer Vision, ICCV 2025</p>
+      <p class="paper-date">Aug 2024 &ndash; Nov 2024</p>
+      <p class="paper-links"><a href="https://cubhe.github.io/Sparse-View-FDT/" target="_blank" rel="noopener">Project Page</a></p>
+      <div class="paper-body">
+        <p>i) We demonstrate, for the first time, the capability to reconstruct volumetric RI of semi-transparent biological samples from diffracted fluorescence images with limited angles and sparse views, validated through both simulations and real-world experiments. This work opens up a new avenue in diffraction-informed neural volumetric representations.</p>
+        <p>ii) We demonstrate the effectiveness and efficiency of NVP in optical tomography, reducing the required number of images by nearly 50-fold and processing time by 3-fold compared to previous methods in our demonstrated experiments.</p>
+        <p>iii) We leverage the physical prior of light diffraction to achieve physically accurate rendering and quantitative RI reconstruction of volumetric objects, overcoming the limitations of ray-optics models at microscale imaging and broadening the applicability of neural fields in microscopic imaging.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-img"><img src="images/research-fdt.jpg" alt="FDT"></div>
+      <h3 class="paper-title">Fluorescence Diffraction Tomography using Explicit Neural Fields</h3>
+      <p class="paper-venue">under review</p>
+      <p class="paper-date">Sep 2023 &ndash; July 2024</p>
+      <p class="paper-links">Project page : <a href="https://cubhe.github.io/fdt/" target="_blank" rel="noopener">Fluorescence Diffractive Tomography with Neural Fields</a></p>
+      <div class="paper-body">
+        <p>Simultaneous imaging of fluorescence-labeled and label-free phase objects in the same sample can provide distinct and complementary information. Most multimodal fluorescence-phase imaging operates in transmission mode, capturing fluorescence images and phase images separately or sequentially, which limits their practical use for in vivo applications. Alternatively, simultaneous fluorescence-phase imaging in reflection mode, which captures diffracted fluorescence and then reconstructs phase information from fluorescence images, has been demonstrated with fluorescent beads and label-free single-layer cells. However, reconstructing the 3D refractive index (RI) of thick samples from fluorescence images over a large volume and at high resolution remains challenging. To tackle this challenge, we develop fluorescence diffraction tomography (FDT) with explicit neural fields to reconstruct the 3D RI of thick samples from diffracted fluorescence images captured on a defocused image plane. The successful reconstruction of 3D RI using FDT relies on four key components: coarse-to-fine structure, self-calibration, a differential multi-slice rendering model, and partial coherent masks. The explicit representation integrates with coarse-to-fine structure for high-speed, high-resolution reconstruction, while the differential multi-slice rendering model enables self-calibration of system parameters, ensuring accurate forward image prediction and RI reconstruction. Partial coherent masks efficiently resolve discrepancies between the coherent light model and partial coherent light data. FDT successfully reconstructed the RI of 3D cultured label-free 3D MuSCs tube in a 530&times;530&times;300 &micro;m&sup3; volume at 1024&times;1024 pixels across 24 z-layers from fluorescence images, demonstrating high fidelity 3D RI reconstruction of bulky and heterogeneous biological samples in vitro.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-img"><img src="images/research-ndlf.png" alt="NDLF"></div>
+      <h3 class="paper-title">Neural Defocus Light Field Rendering</h3>
+      <p class="paper-venue"><a href="https://ieeexplore.ieee.org/document/11023177" target="_blank" rel="noopener">IEEE Transactions on Pattern Analysis and Machine Intelligence</a>, 2025</p>
+      <p class="paper-date">Sep 2022 &ndash; June 2023</p>
+      <p class="paper-links"><a href="https://cubhe.github.io/NDLF/" target="_blank" rel="noopener">Project Page</a></p>
+      <div class="paper-body">
+        <p>The light field camera has significantly advanced conventional imaging methods and microscopy over the past decades, providing high-dimensional information in 2D images and enabling a variety of applications. However, inherent shortcomings persist, mainly due to the complex optical setup and the trade-off between resolution.</p>
+        <p>In this work, we propose a Neural Defocus Light Field (NDLF) rendering method, which constructs the light field without a micro-lens array but achieves the same resolution as the original image. The basic unit of NDLF is the 3D point spread function (3D-PSF), which extends the 2D-PSF by incorporating the focus depth axis. NDLF can directly solve the distribution of PSFs in 3D space, enabling direct manipulation of the PSF in 3D and enhancing our understanding of the defocus process. NDLF achieves the focused images rendering by redefining the focus images as slices of the NDLF, which are superpositions of cross-sections of the 3D-PSFs.</p>
+        <p>NDLF modulates the 3D-PSFs using three multilayer perceptron modules, corresponding to three Gaussian-based models from coarse to fine. NDLF is trained on 20 high-resolution (1024 &times; 1024) images at different focus depths, enabling it to render focused images at any given focus depth. The structural similarity index between the predicted and measured focused images is 0.9794. Moreover, we developed a hardware system to collect the high resolution focused images with corresponding focus depth, and depth maps.</p>
+        <p>NDLF achieves high-resolution light field imaging with a single-lens camera and also resolves the distribution of 3D-PSFs in 3D space, paving the way for novel light-field synthesis techniques and deeper insights into defocus blur.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-img"><img src="images/research-mddnet.jpg" alt="MDDNet"></div>
+      <h3 class="paper-title">Multi-task Learning for Monocular Depth and Defocus Estimations</h3>
+      <p class="paper-venue"><a href="http://arxiv.org/abs/2208.09848" target="_blank" rel="noopener">Arxiv</a> &nbsp; <a href="https://github.com/cubhe/MDDNet" target="_blank" rel="noopener">GitHub</a></p>
+      <p class="paper-date">Sep 2021 &ndash; Aug 2022</p>
+      <div class="paper-body">
+        <p><strong>Motivation:</strong> Explored the inverse process of the Point Spread Function (PSF) to decode the defocused and depth maps from focused images</p>
+        <p>We propose a multi-task learning network for depth and defocus estimation, which can efficiently unite the depth and defocus map estimation.</p>
+        <p>We set up the ALL-in-3D dataset which is the firtst all real image dataset consisting of all-in-focus image, focused image with focus depth, depth map and defocus map. The ALL-in-3D dataset is of high resolution and precision, and contains 100K sets of images.</p>
+        <p>We explore the implied defocus and the depth information in the focused images with the All-in-3D dataset and the new network structure. The experiment results demonstrate that the depth and defocus map promote each other by the multi-task architecture.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-img"><img src="images/research-allin3d.jpg" alt="All-in-3D dataset"></div>
+      <h3 class="paper-title">All-in-3D Dataset</h3>
+      <p class="paper-date">Sep 2020 &ndash; Aug 2021</p>
+      <p class="paper-links"><a href="https://drive.google.com/drive/folders/1hN7K9Z6VfZxLCCeIp5VAcHTKjvd7eQnh" target="_blank" rel="noopener">Google Drive</a></p>
+      <div class="paper-body">
+        <p>100,000 sets of the high-resolution all-in-focus images, focused images, depth maps and defocus maps with the size of 2452 &times; 2056 are provided.</p>
+        <p>The depth map in our dataset do not require extra alignment or interpolation with the RGB images, since the depth is solved by pixel. Compared to the depth maps obtained by laser, the depth maps in our dataset are dense and have the same FOV as the RGB images.</p>
+        <p>It provides pixel-level annotated defoucs maps where the defocus is calculated by the CoC size. Some datasets just provide the binary defocus map labeled by subjective perception or clearness analysis, and others use the simulated focus depth to calculate the CoC size of the defocus maps.</p>
+        <p>More general. The dataset can be applied in SFF/SFDF and optical deblur domain.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-img"><img src="images/research-psf.png" alt="PSF estimation"></div>
+      <h3 class="paper-title">Precise Point Spread Function (PSF) Estimation</h3>
+      <p class="paper-venue"><a href="https://arxiv.org/abs/2203.02953" target="_blank" rel="noopener">Arxiv</a> &nbsp; <a href="https://github.com/cubhe/precise-point-spread-function-estimation" target="_blank" rel="noopener">GitHub</a></p>
+      <p class="paper-date">June 2021 &ndash; Mar 2022</p>
+      <div class="paper-body">
+        <p><strong>Motivation:</strong> Investigated the process of generating focused image and proposed a new method to determine PSF, from the perspective of computational photography</p>
+        <p>Developed a precise mathematical model of the camera&rsquo;s point spread function to describe the defocus process and solved the parameters which cannot be solved by the optimization algorithm, including one optical composite parameter and one mechanical parameter</p>
+        <p>Built a hardware system consisting of a focusing system and a structured light system to acquire the all-in-focus image, the focused image with corresponding focus depth, and the depth map in the same view</p>
+        <p>Designed experiments on both standard planes with synthetic patterns and actual objects to solve and evaluate the efficiency and effectiveness of the proposed algorithm. Implemented the model using the open-source PyTorch framework and the CUDA toolkits with an Nvidia Titan RTX 24G</p>
+        <p>Optimized focused image generation algorithms. Utilized CUDA toolkit instead of SCIPY tool library on CPU to synthesize the focused images. Improved image processing speed from 5s to 1ms</p>
+        <p>Designed a novel metric based on the defocus histogram to evaluate the difference between the simulated focused image and the actual focused image to obtain 40% higher accuracy than the previous blurred image generation method</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-img"><img src="images/research-sff.jpg" alt="Shape from Focus hardware"></div>
+      <h3 class="paper-title">Robust Image Focus for Shape from Focus using Gradient of Focus Measure Curve</h3>
+      <p class="paper-date">Sep 2020 &ndash; May 2021</p>
+      <div class="paper-body">
+        <p><strong>Course Learning:</strong> (1) Learned the structured light depth estimation method to find the depth of an object by projecting a stripe onto the object and then photographing it with a camera. (2) Studied the shape from focus method to solve for object depth by using defocus information. Built the hardware system for the method and wrote the corresponding code</p>
+        <p><strong>Hardware System Building:</strong> (1) Built focus system with Arduino, stepper motor, industrial infrared sensor, industrial camera. (2) Used Arduino to control the motor to drive the camera and trigger the camera to take pictures. (3) Utilized Arduino to connect with IR sensor through TTL to RS485 adapter to trigger sensor measurement and get measured data. (4) Deployed the camera to connect to the computer via RJ-45 to transfer the image data. (5) Implemented Arduino to connect to computer via USB to transfer sensor measurement data and obtained distance data on computer</p>
+        <p><strong>Software Building:</strong> (1) Built a development environment for Arduino using C/C++. (2) Used Python and OpenCV to process the captured images and focal length. (3) Proposed a novel algorithm to improve the Shape from Focus accuracy using gradient of focus measure curve</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===================== QUOTE 2 ===================== -->
+  <section class="quote" style="background-image:url('images/rocket.png')">
+    <p>&ldquo;Do not go gentle into that good night.&rdquo;&nbsp;&nbsp;&nbsp;&ndash; Dylan Thomas</p>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="projects">
+    <h2 class="title-serif center">Projects</h2>
+
+    <article class="proj">
+      <div class="proj-text">
+        <h3 class="proj-title">Cubli</h3>
+        <p class="proj-date">Oct 2019 &ndash; Aug 2020</p>
+        <ul>
+          <li>Completed the mechatronic design of Cubli, a cube with three reaction wheels mounted on the orthogonal plane, which becomes a 3D inverted pendulum based on the reaction wheels when placed at one of its vertices</li>
+          <li>Placed the momentum wheel, motor, and electronic components such as motor driver, inertial sensing unit, and main control board inside a square body with a side length of 180 mm</li>
+          <li>Simulated and analyzed the Cubli to rationalize the internal space of the system. Performed a joint simulation with MATLAB-Simulink and Adams for the block single-sided equilibrium mode and the single-point equilibrium mode</li>
+          <li>Built the physical experimental platform and used the STM32F103 microcontroller (MCU) to apply the control algorithm</li>
+        </ul>
+        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/175971541" target="_blank" rel="noopener">Zhihu</a> ( 77 like 154 favorite )</p>
+      </div>
+      <div class="proj-img"><img src="images/proj-cubli.jpg" alt="Cubli"></div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-text">
+        <h3 class="proj-title">Cubesolver</h3>
+        <p class="proj-date">Oct 2017 &ndash; May 2018</p>
+        <ul>
+          <li><strong>Hardware Setup:</strong> (1) Used SolidWorks to design and machine the robot frame and connectors. (2) Utilized 3D printing to make the fingertips of the robot. (3) Applied for patent protection for the design of the clamping part</li>
+          <li><strong>Electronics Setup:</strong> (1) Selected 57 stepper motors to drive the robot manipulator. (2) Installed the Arduino mega 2560 to receive signals from the host computer and drive the motors.</li>
+          <li><strong>Algorithm Deployment:</strong> (1) Implemented the Kociemba algorithm to solve the Rubik&rsquo;s Cube in about 20 steps, which involves knowledge of group theory and data knots. (2) Used camera to load the image and perform Gaussian blur, white balance and histogram equalization on the received image. (3) Divided the processed image into nine regions and obtained the average of the six RGBHSV values for each region. (4) Put the RGBHSV information into the Support Vector Machines (SVM) and trained the SVM classifier.</li>
+        </ul>
+        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/50380773" target="_blank" rel="noopener">Zhihu</a> ( 198 like, 242 favorite ) <a href="https://github.com/cubhe/cubesolver" target="_blank" rel="noopener">GitHub</a> （ 6 &starf; ）</p>
+      </div>
+      <div class="proj-img"><img src="images/proj-cubesolver.jpg" alt="Cubesolver"></div>
+    </article>
+
+    <article class="proj">
+      <div class="proj-text">
+        <h3 class="proj-title">Gobang Robot</h3>
+        <p class="proj-date">July 2, 2020 - July 10, 2020</p>
+        <ul>
+          <li><strong>Hardware:</strong> (1) Robot kinematics analysis. (2) Used Arduino to control the servo and air pump (3) Used SolidWorks to design the layout.</li>
+          <li><strong>Software:</strong> (1) Implemented the Kociemba algorithm to solve the Rubik&rsquo;s Cube in about 20 steps, which involves knowledge of group theory and data knots. (2) Used camera to load the image and perform Gaussian blur, white balance and histogram equalization on the received image. (3) Divided the processed image into nine regions and obtained the average of the six RGBHSV values for each region. (4) Put the RGBHSV information into the Support Vector Machines (SVM) and trained the SVM classifier.</li>
+        </ul>
+        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/160194493" target="_blank" rel="noopener">Zhihu</a> ( 19 like 19 favorite)</p>
+      </div>
+      <div class="proj-img"><img src="images/proj-gobang.png" alt="Gobang Robot"></div>
+    </article>
+  </section>
+
+  <!-- ===================== BEYOND THE LAB ===================== -->
+  <section id="beyond" class="beyond">
+    <h2 class="title-serif center">Beyond the Lab</h2>
+
+    <h3 class="sub-serif">Awards</h3>
+    <ul class="award-list">
+      <li>China National Scholarship, Sep 2019;</li>
+      <li>First Prize of Contemporary Undergraduate Mathematical Contest in Modeling &ndash; Chongqing District (CUMCM), May 2019;</li>
+      <li>First Prize of RoboWork (China Engineering Robot Competition) *2, June 2018, 2019;</li>
+      <li>Second Prize of National University Students Advanced Mapping and Product Modeling Competition *2, May 2017, 2018;</li>
+      <li>Second Prize of National English Competition for College Students (NECCS), April 2017;</li>
+      <li>University First Class Scholarship, Oct 2020</li>
+    </ul>
+
+    <h3 class="sub-serif">Campus Life</h3>
+    <p class="beyond-para">Outside of research life, I was the president of the school's Robotics Society, 2018, which is the largest technology club in the school. I, along with my friends in the club, won many national awards, which is a very memorable memory for me.</p>
+
+    <h3 class="sub-serif">CV</h3>
+    <p class="beyond-para"><a href="https://www.overleaf.com/read/gqdnznfrhygz#142bd4" target="_blank" rel="noopener">Overleaf</a><br>Languates: TOEFL 109, GRE 332.</p>
+
+    <h3 class="sub-serif">&#9749; Reach Out</h3>
+    <p class="beyond-para">Thanks for stopping by!<br>
+    If any of my work caught your eye, let&rsquo;s grab a coffee &#9749; or hop on a quick Zoom &#128187; &mdash; your pick.<br>
+    Always happy to chat ideas, projects, or just life.</p>
+    <p class="beyond-para"><a href="https://calendar.app.google/kAynj3h93j96dw9V8" target="_blank" rel="noopener">Google calendar</a></p>
+  </section>
+
+  <!-- ===================== VISITOR INFO ===================== -->
+  <section id="visitor" class="visitor">
+    <div class="visitor-card">
+      <h3 class="sub-serif visitor-title">Your Visit</h3>
+      <p class="visitor-status" id="visitor-status">Looking up your connection&hellip;</p>
+      <div class="visitor-grid" id="visitor-detail" hidden>
+        <div class="visitor-item">
+          <span class="visitor-key">IP address</span>
+          <span class="visitor-val" id="v-ip">&mdash;</span>
+        </div>
+        <div class="visitor-item">
+          <span class="visitor-key">Location</span>
+          <span class="visitor-val" id="v-loc">&mdash;</span>
+        </div>
+        <div class="visitor-item">
+          <span class="visitor-key">Network</span>
+          <span class="visitor-val" id="v-isp">&mdash;</span>
+        </div>
+      </div>
+      <p class="visitor-priv">Detected in your browser via a public geolocation service and shown only to you &mdash; this site itself does not store it.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Renzhi He</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
