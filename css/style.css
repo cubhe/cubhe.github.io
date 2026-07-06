@@ -227,6 +227,50 @@ img{ max-width:100%; display:block; }
   line-height:1.45;
 }
 
+/* ---------- Research groups (collapsible) ---------- */
+.research-group{
+  max-width:1180px;
+  margin:0 auto 40px;
+}
+.research-group-head{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:16px;
+  cursor:pointer;
+  list-style:none;
+  padding:14px 2px;
+  border-bottom:2px solid rgba(0,0,0,.28);
+  user-select:none;
+}
+.research-group-head::-webkit-details-marker{ display:none; }
+.research-group-head:hover .research-group-title{ opacity:.62; }
+.research-group-title{
+  font-family:var(--serif-title);
+  font-size:30px;
+  color:var(--ink-soft);
+  line-height:1.2;
+}
+.research-toggle{
+  flex:0 0 auto;
+  width:13px; height:13px;
+  margin-right:8px;
+  border-right:2px solid #4a4a4a;
+  border-bottom:2px solid #4a4a4a;
+  transform:rotate(45deg);            /* points down: click to expand */
+  transition:transform .3s ease;
+}
+.research-group[open] .research-toggle{
+  transform:rotate(-135deg);          /* points up: click to collapse */
+}
+.research-group-intro{
+  font-family:var(--serif-accent);
+  font-style:italic;
+  font-size:18px;
+  color:#2c2c2c;
+  max-width:920px;
+  margin:18px 0 30px;
+  line-height:1.55;
+}
+
 /* ============================================================
    PROJECTS — light bg, text left / image right rows
    ============================================================ */
@@ -353,4 +397,6 @@ img{ max-width:100%; display:block; }
   .title-serif{ font-size:32px; }
   .paper-title{ font-size:18px; }
   .news-list li{ font-size:19px; }
+  .research-group-title{ font-size:23px; }
+  .research-group-intro{ font-size:17px; }
 }
