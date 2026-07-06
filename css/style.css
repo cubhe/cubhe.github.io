@@ -288,61 +288,11 @@ img{ max-width:100%; display:block; }
 /* ============================================================
    FOOTER
    ============================================================ */
-/* ---------- Visitor info card ---------- */
-.visitor{
-  background:var(--bg-footer);
-  color:#d7d7d7;
-  padding:50px 24px 56px;
-}
-.visitor-card{ max-width:660px; margin:0 auto; text-align:center; }
-.visitor-title{ color:#f0f0f0; margin:0 0 14px; }
-.visitor-status{
-  font-family:var(--serif-accent);
-  font-style:italic;
-  color:#b7b7b7;
-  margin:0 0 18px;
-}
-.visitor-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  margin:0 0 18px;
-  text-align:left;
-}
-.visitor-item{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:6px;
-  padding:14px 14px;
-}
-.visitor-key{
-  display:block;
-  font-family:var(--serif-title);
-  font-size:12px; letter-spacing:.6px;
-  text-transform:uppercase;
-  color:#8f8f8f;
-  margin-bottom:6px;
-}
-.visitor-val{
-  font-family:var(--serif-body);
-  font-size:17px;
-  color:#f2f2f2;
-  word-break:break-word;
-}
-.visitor-val a{ color:#7fb0e0; }
-.visitor-priv{
-  font-family:var(--serif-body);
-  font-size:12.5px;
-  color:#7d7d7d;
-  margin:6px 0 0;
-}
-
 .footer{
   background:var(--bg-footer);
   color:#cfcfcf;
   text-align:center;
-  padding:26px 20px;
-  border-top:1px solid rgba(255,255,255,.08);
+  padding:30px 20px;
   font-family:var(--serif-body);
   font-size:15px;
 }
@@ -403,5 +353,4 @@ img{ max-width:100%; display:block; }
   .title-serif{ font-size:32px; }
   .paper-title{ font-size:18px; }
   .news-list li{ font-size:19px; }
-  .visitor-grid{ grid-template-columns:1fr; }
 }
