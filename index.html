@@ -115,37 +115,16 @@
     </article>
         </details>
       </div>
-    </details>
-
-    <details class="research-group">
-      <summary class="research-group-head">
-        <span class="research-group-title">Macroscopic Imaging</span>
-        <span class="research-toggle" aria-hidden="true"></span>
-      </summary>
 
       <div class="research-direction">
         <h3 class="direction-title">Focus</h3>
-        <p class="research-group-intro">Computational imaging for conventional cameras. By modeling the point spread function, defocus, and the light field, these projects recover depth, all-in-focus detail, and light-field renderings from ordinary single-lens photographs &mdash; spanning learning-based methods, a large-scale real dataset, and custom optical hardware.</p>
+        <p class="research-group-intro">Recovering depth and all-in-focus imagery from focus cues. By modeling the point spread function and the defocus process, these projects estimate scene depth and restore sharp detail &mdash; spanning a multi-task depth/defocus network, a large-scale real dataset, precise PSF estimation, and shape-from-focus hardware.</p>
 
         <details class="research-sub">
           <summary class="research-sub-head">
             <span class="research-sub-title">Projects</span>
             <span class="research-toggle small" aria-hidden="true"></span>
           </summary>
-
-    <article class="paper">
-      <div class="paper-img"><img src="images/research-ndlf.png" alt="NDLF"></div>
-      <h3 class="paper-title">Neural Defocus Light Field Rendering</h3>
-      <p class="paper-venue"><a href="https://ieeexplore.ieee.org/document/11023177" target="_blank" rel="noopener">IEEE Transactions on Pattern Analysis and Machine Intelligence</a>, 2025</p>
-      <p class="paper-date">Sep 2022 &ndash; June 2023</p>
-      <p class="paper-links"><a href="https://cubhe.github.io/NDLF/" target="_blank" rel="noopener">Project Page</a></p>
-      <div class="paper-body">
-        <p>The light field camera has significantly advanced conventional imaging methods and microscopy over the past decades, providing high-dimensional information in 2D images and enabling a variety of applications. However, inherent shortcomings persist, mainly due to the complex optical setup and the trade-off between resolution.</p>
-        <p>In this work, we propose a Neural Defocus Light Field (NDLF) rendering method, which constructs the light field without a micro-lens array but achieves the same resolution as the original image. The basic unit of NDLF is the 3D point spread function (3D-PSF), which extends the 2D-PSF by incorporating the focus depth axis. NDLF can directly solve the distribution of PSFs in 3D space, enabling direct manipulation of the PSF in 3D and enhancing our understanding of the defocus process. NDLF achieves the focused images rendering by redefining the focus images as slices of the NDLF, which are superpositions of cross-sections of the 3D-PSFs.</p>
-        <p>NDLF modulates the 3D-PSFs using three multilayer perceptron modules, corresponding to three Gaussian-based models from coarse to fine. NDLF is trained on 20 high-resolution (1024 &times; 1024) images at different focus depths, enabling it to render focused images at any given focus depth. The structural similarity index between the predicted and measured focused images is 0.9794. Moreover, we developed a hardware system to collect the high resolution focused images with corresponding focus depth, and depth maps.</p>
-        <p>NDLF achieves high-resolution light field imaging with a single-lens camera and also resolves the distribution of 3D-PSFs in 3D space, paving the way for novel light-field synthesis techniques and deeper insights into defocus blur.</p>
-      </div>
-    </article>
 
     <article class="paper">
       <div class="paper-img"><img src="images/research-mddnet.jpg" alt="MDDNet"></div>
@@ -196,6 +175,39 @@
         <p><strong>Course Learning:</strong> (1) Learned the structured light depth estimation method to find the depth of an object by projecting a stripe onto the object and then photographing it with a camera. (2) Studied the shape from focus method to solve for object depth by using defocus information. Built the hardware system for the method and wrote the corresponding code</p>
         <p><strong>Hardware System Building:</strong> (1) Built focus system with Arduino, stepper motor, industrial infrared sensor, industrial camera. (2) Used Arduino to control the motor to drive the camera and trigger the camera to take pictures. (3) Utilized Arduino to connect with IR sensor through TTL to RS485 adapter to trigger sensor measurement and get measured data. (4) Deployed the camera to connect to the computer via RJ-45 to transfer the image data. (5) Implemented Arduino to connect to computer via USB to transfer sensor measurement data and obtained distance data on computer</p>
         <p><strong>Software Building:</strong> (1) Built a development environment for Arduino using C/C++. (2) Used Python and OpenCV to process the captured images and focal length. (3) Proposed a novel algorithm to improve the Shape from Focus accuracy using gradient of focus measure curve</p>
+      </div>
+    </article>
+        </details>
+      </div>
+    </details>
+
+    <details class="research-group">
+      <summary class="research-group-head">
+        <span class="research-group-title">Macroscopic Imaging</span>
+        <span class="research-toggle" aria-hidden="true"></span>
+      </summary>
+
+      <div class="research-direction">
+        <h3 class="direction-title">Neural Defocus Light Field</h3>
+        <p class="research-group-intro">Rendering the light field from a single-lens camera. NDLF models the 3D point spread function to synthesize focused images at any depth &mdash; achieving light-field imaging without a micro-lens array, at the sensor&rsquo;s full resolution.</p>
+
+        <details class="research-sub">
+          <summary class="research-sub-head">
+            <span class="research-sub-title">Projects</span>
+            <span class="research-toggle small" aria-hidden="true"></span>
+          </summary>
+
+    <article class="paper">
+      <div class="paper-img"><img src="images/research-ndlf.png" alt="NDLF"></div>
+      <h3 class="paper-title">Neural Defocus Light Field Rendering</h3>
+      <p class="paper-venue"><a href="https://ieeexplore.ieee.org/document/11023177" target="_blank" rel="noopener">IEEE Transactions on Pattern Analysis and Machine Intelligence</a>, 2025</p>
+      <p class="paper-date">Sep 2022 &ndash; June 2023</p>
+      <p class="paper-links"><a href="https://cubhe.github.io/NDLF/" target="_blank" rel="noopener">Project Page</a></p>
+      <div class="paper-body">
+        <p>The light field camera has significantly advanced conventional imaging methods and microscopy over the past decades, providing high-dimensional information in 2D images and enabling a variety of applications. However, inherent shortcomings persist, mainly due to the complex optical setup and the trade-off between resolution.</p>
+        <p>In this work, we propose a Neural Defocus Light Field (NDLF) rendering method, which constructs the light field without a micro-lens array but achieves the same resolution as the original image. The basic unit of NDLF is the 3D point spread function (3D-PSF), which extends the 2D-PSF by incorporating the focus depth axis. NDLF can directly solve the distribution of PSFs in 3D space, enabling direct manipulation of the PSF in 3D and enhancing our understanding of the defocus process. NDLF achieves the focused images rendering by redefining the focus images as slices of the NDLF, which are superpositions of cross-sections of the 3D-PSFs.</p>
+        <p>NDLF modulates the 3D-PSFs using three multilayer perceptron modules, corresponding to three Gaussian-based models from coarse to fine. NDLF is trained on 20 high-resolution (1024 &times; 1024) images at different focus depths, enabling it to render focused images at any given focus depth. The structural similarity index between the predicted and measured focused images is 0.9794. Moreover, we developed a hardware system to collect the high resolution focused images with corresponding focus depth, and depth maps.</p>
+        <p>NDLF achieves high-resolution light field imaging with a single-lens camera and also resolves the distribution of 3D-PSFs in 3D space, paving the way for novel light-field synthesis techniques and deeper insights into defocus blur.</p>
       </div>
     </article>
         </details>
