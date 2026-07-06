@@ -258,7 +258,7 @@ img{ max-width:100%; display:block; }
   transform:rotate(45deg);            /* points down: click to expand */
   transition:transform .3s ease;
 }
-.research-group[open] .research-toggle{
+.research-group[open] > .research-group-head .research-toggle{
   transform:rotate(-135deg);          /* points up: click to collapse */
 }
 .research-group-intro{
@@ -267,8 +267,42 @@ img{ max-width:100%; display:block; }
   font-size:18px;
   color:#2c2c2c;
   max-width:920px;
-  margin:18px 0 30px;
+  margin:18px 0 24px;
   line-height:1.55;
+}
+
+/* ---------- Research directions + nested "Projects" ---------- */
+.research-direction{ margin:6px 0 0; }
+.direction-title{
+  font-family:var(--serif-title);
+  font-size:24px;
+  color:var(--ink-soft);
+  margin:22px 0 8px;
+}
+.research-sub{ margin:2px 0 14px; }
+.research-sub-head{
+  display:inline-flex; align-items:center;
+  gap:10px;
+  cursor:pointer;
+  list-style:none;
+  padding:8px 0;
+  user-select:none;
+}
+.research-sub-head::-webkit-details-marker{ display:none; }
+.research-sub-head:hover .research-sub-title{ opacity:.6; }
+.research-sub-title{
+  font-family:var(--serif-title);
+  font-size:17px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:#5a5a5a;
+}
+.research-toggle.small{
+  width:10px; height:10px;
+  margin:0;
+}
+.research-sub[open] > .research-sub-head .research-toggle{
+  transform:rotate(-135deg);
 }
 
 /* ============================================================

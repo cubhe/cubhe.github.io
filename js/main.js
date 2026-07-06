@@ -73,7 +73,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
    Collapsible Research groups — when a group is expanded, make
    sure any not-yet-revealed content inside is shown immediately.
    ------------------------------------------------------------ */
-document.querySelectorAll('.research-group').forEach(function (grp) {
+document.querySelectorAll('.research-group, .research-sub').forEach(function (grp) {
   grp.addEventListener('toggle', function () {
     if (grp.open) {
       grp.querySelectorAll('.reveal').forEach(function (el) {
