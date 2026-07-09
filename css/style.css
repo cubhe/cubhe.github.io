@@ -316,9 +316,9 @@ img{ max-width:100%; display:block; }
 .proj{
   max-width:1180px; margin:0 auto 60px;
   display:grid;
-  grid-template-columns:1fr 340px;
+  grid-template-columns:340px 1fr;   /* media left, text right */
   gap:48px;
-  align-items:start;
+  align-items:center;
 }
 .proj-title{
   font-family:var(--serif-title);
@@ -335,10 +335,14 @@ img{ max-width:100%; display:block; }
 .proj-text ul{ margin:0; padding-left:20px; }
 .proj-text li{ margin:0 0 10px; line-height:1.45; }
 .proj-links{ margin-top:16px; }
-.proj-img img{
-  width:100%; border-radius:2px;
+.proj-text p{ line-height:1.5; margin:0 0 12px; }
+.proj-media img,
+.proj-media video{
+  width:100%; height:auto; display:block;
+  border-radius:2px;
   box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
+.proj-media video{ background:#000; }
 
 /* ============================================================
    BEYOND THE LAB — light bg, centered header, left content
@@ -424,7 +428,7 @@ img{ max-width:100%; display:block; }
   .news-list li{ font-size:22px; }
 
   .proj{ grid-template-columns:1fr; gap:20px; }
-  .proj-img{ max-width:420px; }
+  .proj-media{ max-width:380px; }
 }
 
 @media (max-width:520px){

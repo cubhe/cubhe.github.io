@@ -259,45 +259,37 @@
     <h2 class="title-serif center">Projects</h2>
 
     <article class="proj">
+      <div class="proj-media">
+        <video src="videos/cubli.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+      </div>
       <div class="proj-text">
         <h3 class="proj-title">Cubli</h3>
         <p class="proj-date">Oct 2019 &ndash; Aug 2020</p>
-        <ul>
-          <li>Completed the mechatronic design of Cubli, a cube with three reaction wheels mounted on the orthogonal plane, which becomes a 3D inverted pendulum based on the reaction wheels when placed at one of its vertices</li>
-          <li>Placed the momentum wheel, motor, and electronic components such as motor driver, inertial sensing unit, and main control board inside a square body with a side length of 180 mm</li>
-          <li>Simulated and analyzed the Cubli to rationalize the internal space of the system. Performed a joint simulation with MATLAB-Simulink and Adams for the block single-sided equilibrium mode and the single-point equilibrium mode</li>
-          <li>Built the physical experimental platform and used the STM32F103 microcontroller (MCU) to apply the control algorithm</li>
-        </ul>
-        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/175971541" target="_blank" rel="noopener">Zhihu</a> ( 77 like 154 favorite )</p>
+        <p>A cube that balances on a single corner using three orthogonal reaction wheels &mdash; a 3D reaction-wheel inverted pendulum. I designed the full mechatronics, validated it with MATLAB-Simulink &amp; Adams co-simulation, and implemented the balancing control on an STM32F103.</p>
+        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/175971541" target="_blank" rel="noopener">Zhihu</a> (77 likes)</p>
       </div>
-      <div class="proj-img"><img src="images/proj-cubli.jpg" alt="Cubli"></div>
     </article>
 
     <article class="proj">
+      <div class="proj-media">
+        <video src="videos/cube.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+      </div>
       <div class="proj-text">
         <h3 class="proj-title">Cubesolver</h3>
         <p class="proj-date">Oct 2017 &ndash; May 2018</p>
-        <ul>
-          <li><strong>Hardware Setup:</strong> (1) Used SolidWorks to design and machine the robot frame and connectors. (2) Utilized 3D printing to make the fingertips of the robot. (3) Applied for patent protection for the design of the clamping part</li>
-          <li><strong>Electronics Setup:</strong> (1) Selected 57 stepper motors to drive the robot manipulator. (2) Installed the Arduino mega 2560 to receive signals from the host computer and drive the motors.</li>
-          <li><strong>Algorithm Deployment:</strong> (1) Implemented the Kociemba algorithm to solve the Rubik&rsquo;s Cube in about 20 steps, which involves knowledge of group theory and data knots. (2) Used camera to load the image and perform Gaussian blur, white balance and histogram equalization on the received image. (3) Divided the processed image into nine regions and obtained the average of the six RGBHSV values for each region. (4) Put the RGBHSV information into the Support Vector Machines (SVM) and trained the SVM classifier.</li>
-        </ul>
-        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/50380773" target="_blank" rel="noopener">Zhihu</a> ( 198 like, 242 favorite ) <a href="https://github.com/cubhe/cubesolver" target="_blank" rel="noopener">GitHub</a> （ 6 &starf; ）</p>
+        <p>A robot that solves the Rubik&rsquo;s Cube in about 20 moves. It pairs a custom SolidWorks / 3D-printed frame (with a patented gripper) and 57 Arduino-driven stepper motors with camera-based color recognition (an SVM classifier) and the Kociemba solving algorithm.</p>
+        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/50380773" target="_blank" rel="noopener">Zhihu</a> (198 likes) &middot; <a href="https://github.com/cubhe/cubesolver" target="_blank" rel="noopener">GitHub</a> (6 &starf;)</p>
       </div>
-      <div class="proj-img"><img src="images/proj-cubesolver.jpg" alt="Cubesolver"></div>
     </article>
 
     <article class="proj">
+      <div class="proj-media"><img src="images/proj-gobang.png" alt="Gobang Robot"></div>
       <div class="proj-text">
         <h3 class="proj-title">Gobang Robot</h3>
         <p class="proj-date">July 2, 2020 - July 10, 2020</p>
-        <ul>
-          <li><strong>Hardware:</strong> (1) Robot kinematics analysis. (2) Used Arduino to control the servo and air pump (3) Used SolidWorks to design the layout.</li>
-          <li><strong>Software:</strong> (1) Implemented the Kociemba algorithm to solve the Rubik&rsquo;s Cube in about 20 steps, which involves knowledge of group theory and data knots. (2) Used camera to load the image and perform Gaussian blur, white balance and histogram equalization on the received image. (3) Divided the processed image into nine regions and obtained the average of the six RGBHSV values for each region. (4) Put the RGBHSV information into the Support Vector Machines (SVM) and trained the SVM classifier.</li>
-        </ul>
-        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/160194493" target="_blank" rel="noopener">Zhihu</a> ( 19 like 19 favorite)</p>
+        <p>A gantry robot that plays Gobang (five-in-a-row): robot-kinematics analysis, an Arduino-controlled servo and air-pump gripper, and a SolidWorks-designed layout, with camera-based board recognition driving the moves.</p>
+        <p class="proj-links"><a href="https://zhuanlan.zhihu.com/p/160194493" target="_blank" rel="noopener">Zhihu</a> (19 likes)</p>
       </div>
-      <div class="proj-img"><img src="images/proj-gobang.png" alt="Gobang Robot"></div>
     </article>
   </section>
 
