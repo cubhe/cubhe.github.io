@@ -202,6 +202,20 @@ img{ max-width:100%; display:block; }
   margin:22px auto 6px;
   max-width:1000px;
 }
+.paper-authors{
+  font-family:var(--serif-body);
+  text-align:center;
+  color:#212529;
+  margin:2px 0;
+}
+.paper-authors .me{
+  font-weight:700;
+  text-decoration:underline;
+}
+/* co-first author: underlined but not bolded */
+.paper-authors .cofirst{
+  text-decoration:underline;
+}
 .paper-venue{
   font-family:var(--serif-title);
   text-align:center;
